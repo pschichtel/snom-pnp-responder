@@ -1,0 +1,12 @@
+SUBSCRIBE sip:MAC%3a000413939050@piesport.sanitaetshaus-schichtel.de SIP/2.0
+Via: SIP/2.0/UDP 192.168.1.114:57648;rport
+From: <sip:MAC%3a000413939050@piesport.sanitaetshaus-schichtel.de>;tag=1655298381
+To: <sip:MAC%3a000413939050@piesport.sanitaetshaus-schichtel.de>
+Call-ID: 878278489@192.168.1.114
+CSeq: 1 SUBSCRIBE
+Event: ua-profile;profile-type="device";vendor="snom";model="snomD385";version="10.1.119.10"
+Expires: 0
+Accept: application/url
+Contact: <sip:192.168.1.114:57648>
+User-Agent: snomD385/10.1.119.10
+Content-Length: 0
