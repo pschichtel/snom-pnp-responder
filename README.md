@@ -8,3 +8,6 @@ This is based on the documentation provided by Snom:
 
 * https://service.snom.com/display/wiki/Auto+Provisioning
 * https://service.snom.com/pages/viewpage.action?pageId=17370665
+
+This has been built for this:
+https://service.snom.com/pages/viewpage.action?pageId=106954773
