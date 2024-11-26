@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
     implementation("javax.sip:jain-sip-ri:1.3.0-91")
     testImplementation(kotlin("test"))
 }
