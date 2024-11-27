@@ -1,8 +1,6 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    kotlin("jvm") version "1.7.0"
-    id("com.github.johnrengelman.shadow") version "7.1.2"
+    alias(libs.plugins.kotlinJvm)
+    alias(libs.plugins.shadow)
     application
 }
 
@@ -14,8 +12,8 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3")
-    implementation("javax.sip:jain-sip-ri:1.3.0-91")
+    implementation(libs.kotlinxCoroutinesCore)
+    implementation(libs.sip)
     testImplementation(kotlin("test"))
 }
 
@@ -23,10 +21,10 @@ application {
     mainClass.set("tel.schich.snompnpresponder.MainKt")
 }
 
-tasks.test {
-    useJUnitPlatform()
+kotlin {
+    jvmToolchain(8)
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+tasks.test {
+    useJUnitPlatform()
 }
